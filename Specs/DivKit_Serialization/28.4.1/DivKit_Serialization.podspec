@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DivKit_Serialization'
   s.module_name      = 'Serialization'
-  s.version          = '28.4.1'
+  s.version          = '28.4.1-source'
   s.summary          = 'Serialization'
   s.summary          = 'Part of DivKit framework'
   s.description      = 'Part of DivKit framework'
@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'divkit' => 'divkit@yandex-team.ru' }
-  s.source           = { :git => 'https://github.com/divkit/divkit-ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rehsals/divkit-ios.git', :tag => s.version.to_s }
 
   s.swift_version = '5.7'
   s.requires_arc = true
@@ -17,11 +17,7 @@ Pod::Spec.new do |s|
   s.platforms = { :ios => '11.0' }
   s.static_framework = true
 
-  s.pod_target_xcconfig = {
-    'SWIFT_OPTIMIZATION_LEVEL' => '-Onone'
-  }
-
-  s.dependency 'VGSLCommonCore', '2.2.1'
+  s.dependency 'VGSLCommonCore', '2.2.1-source'
 
   s.source_files = [
     'Serialization/**/*'
